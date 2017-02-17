@@ -1,0 +1,9 @@
+version: "1"
+
+services:
+    itacoreauthz:
+        build: ./src/ItaCore
+        expose:
+            - "80"
+        labels:
+            com.microsoft.acs.dcos.marathon.healthcheck.path: '/'
