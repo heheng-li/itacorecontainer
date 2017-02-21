@@ -4,6 +4,6 @@ services:
     ci-build:
         image: microsoft/dotnet:1.0.0-preview2.1-sdk
         volumes:
-            - ./itacoreauthz:/src
-        working_dir: /src
+            - ./itacoreauthz:/itacoreauthz
+        working_dir: /itacoreauthz
         command: /bin/bash -c "dotnet restore && dotnet publish -c Release -o bin ."

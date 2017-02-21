@@ -2,7 +2,7 @@ version: "2"
 
 services:
     itacoreauthz:
-        build: ./src
+        build: ./itacoreauthz
         expose:
             - "80"
         labels:
